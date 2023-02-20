@@ -27,21 +27,6 @@ Install Flutter dependencies
 flutter pub get
 ```
 
-### Web
-
-Create Google Cloud API key with the following APIs enabled:
-
-* Maps Javascript API
-* Places API
-* Directions API
-* Geocoding API
-
-Replace the __google_maps_polyline_API_KEY__ text placeholder with your Google API key in the following files:
-* lib/api/google_api.dart
-
-Google Places APIs and Directions API cannot be used in browsers due to the CORS rules violation. As a workaround I deployed a simple CORS proxy server running in the google cloud. Path to this server s sored in 'prodApiProxy' variable declared in the 'lib/api/google_api.dart' file.
-
-
 ### Android & iOS
 
 Replace the __google_maps_polyline_API_KEY__ text placeholder with your Google API key in the /ios/* and /android/* project folders, make sure the following APIs are enabled:
